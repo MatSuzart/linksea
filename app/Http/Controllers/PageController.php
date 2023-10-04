@@ -8,11 +8,18 @@ use App\Page;
 class PageController extends Controller
 {
     public function index($slug){
-        //$page = Page::where('slug',$slug)->frist();
+        $page = Page::where('slug',$slug)->frist();
 
-        $links = [];
+        
 
         if($page){
+
+            $bg = '';
+
+            
+
+            $links = [];
+
             return view('page',[
                 'font_color'=>$page->op_font_color,
                 'profile_image'=>url('media/uploads').'/'.$page->op_profile_image,
