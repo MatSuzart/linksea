@@ -12,5 +12,18 @@
     <div class="profileImage">
         <img src="{{$profile_image}}" />
     </div>
+
+    <div class="profileTitle">{{$title}}}</div>
+    <div class="profileDescription">{{$description}}</div>
+    <div class="linkArea">
+
+    </div>
+
+    <div class="banner">
+        Create <a href="https://github/matsuzart"></a>
+    </div>
+
+    
+
 </body>
 </html>
