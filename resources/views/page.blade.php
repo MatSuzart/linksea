@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
     <style type="text/css">
-        
+        body{
+            display: flex;
+            flex-direction: colum;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+            font-family: Helvetica, Arial;
+            
+        }
     </style>
 </head>
 <body>
