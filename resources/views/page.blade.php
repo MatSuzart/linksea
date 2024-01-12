@@ -12,7 +12,30 @@
             margin: 0;
             padding: 20px;
             font-family: Helvetica, Arial;
-            
+            color:{{$font_color}};
+        }
+        .profileImage img{
+            width: auto;
+            height: 100px;
+
+        }
+        .profileTitle{
+            font-size: 17px;
+            font-weight:bold;
+            margin-top:10px;
+
+        }
+        .profileDescription{
+            font-size:15px;
+            margin-top:5px;
+        }
+
+        .linkArea{
+            width:100%;
+            marign: 50px 0;
+        }
+        .banner a {
+            color: {{$font_color}};
         }
     </style>
 </head>
