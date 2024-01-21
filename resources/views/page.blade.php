@@ -34,6 +34,15 @@
             width:100%;
             marign: 50px 0;
         }
+        .linkArea a {
+            display: block;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom:20px
+        }
         .banner a {
             color: {{$font_color}};
         }
@@ -47,7 +56,9 @@
     <div class="profileTitle">{{$title}}}</div>
     <div class="profileDescription">{{$description}}</div>
     <div class="linkArea">
-
+        @foreach ($links as $link)
+            <a href="{{$link->href}}">{{$link->title}}</a>
+        @endforeach
     </div>
 
     <div class="banner">
